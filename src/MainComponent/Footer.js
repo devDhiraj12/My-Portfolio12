@@ -26,7 +26,7 @@ function Footer() {
 
   return (
     <div className="bg-slate ">
-      <div className="  border-2 border-red-500  grid  grid-cols-1 md:grid-cols-3 gap-12 mt-0  m-2 p-5 md:p-8 text-center">
+      <div className="   grid  grid-cols-1 md:grid-cols-3 gap-12  p-5 md:p-8 text-center">
         <div className=" ">
           <ul className="  mt-12 font-serif text-lg md:text-3xl font-bold  ">
             <li>
@@ -36,7 +36,7 @@ function Footer() {
           <div className="underline1"></div>
           <div className="underline2"></div>
           <div>
-            <ul className=" grid  grid-cols-5 mt-3 md:mt-7 gap-4  ">
+            <ul className=" grid  grid-cols-5 mt-3 md:mt-7   ">
               <li className=" w-[20px] md:w-[25px]  hover:-translate-y-2 duration-700 hover:duration-300  ">
                 <a href="https://www.linkedin.com/in/dhiraj-dagabaj-1a3573248/">
                   <img src={linkedin} alt="under-heading" />
@@ -79,7 +79,6 @@ function Footer() {
                 label="Full Name"
                 maxRows={7}
                 size="small"
-                helperText="Incorrect entry."
 
               />
               <TextField

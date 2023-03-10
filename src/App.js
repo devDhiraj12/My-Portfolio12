@@ -10,15 +10,11 @@ function App() {
   return (
     <BrowserRouter>
     <Header/>
-    {/* <Routes>
-      <Route path="/" element={<Home/>}/>
-      <Route path="/admin" element={Admin}/>
-    </Routes>
-     */}
+    
 
       <Routes>
-      <Route exact path="/" component={<Home/>} />
-      <Route exact path="/admin" component={<Admin/>} />
+      <Route exact path="/" element={<Home/>} />
+      <Route exact path="/admin" element={<Admin/>} />
       </Routes>
     <Footer/>
     </BrowserRouter>

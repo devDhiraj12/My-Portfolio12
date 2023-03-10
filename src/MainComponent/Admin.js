@@ -37,7 +37,7 @@ const Admin = () => {
       </div>
 
       <Grid>
-        <Paper className="px-10 bg-#b2b2b2  py-5 h-[400px] w-[280px] mx-72 " elevation={10} style={paperStyle}>
+        <Paper className="px-10  py-5 h-[400px] w-[280px] mx-72 mt-8 " elevation={10} style={paperStyle}>
           <Grid align="center">
             <Avatar style={avatarStyle}>
               <LockPersonOutlinedIcon />

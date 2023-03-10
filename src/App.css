@@ -112,5 +112,6 @@
 }
 
 .adminpage {
-  background:  linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(56,60,129,0.9921218487394958) 49%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(56,60,129,0.9921218487394958) 56%, rgba(0,212,255,1) 100%);
+  
 }
