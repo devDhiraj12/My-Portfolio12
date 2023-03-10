@@ -44,27 +44,27 @@ function Home() {
             <ul className=" grid grid-cols-5  mx-[20px] md:mx-[500px] mt-10 md:-mt-3 gap-5 md:gap-5 ">
               <li className=" w-[30px] md:w-[40px] p-2 md:p-3  bg-white  hover:-translate-y-2 duration-700 hover:duration-300  rounded-[50%]">
                 <a href="https://www.linkedin.com/in/dhiraj-dagabaj-1a3573248/">
-                  <img src={linkedin} />
+                  <img src={linkedin} alt="under-heading" />
                 </a>
               </li>
               <li className=" w-[30px] md:w-[40px] p-2 md:p-3  bg-white hover:-translate-y-2 duration-700 hover:duration-300 rounded-[50%]">
                 <a href="https://github.com/devDhiraj12">
-                  <img src={github} />
+                  <img src={github} alt="under-heading" />
                 </a>
               </li>
               <li className=" w-[30px] md:w-[40px] p-2 md:p-3  bg-white hover:-translate-y-2 duration-700 hover:duration-300 rounded-[50%]">
                 <a href="https://twitter.com/Dhiraj82866985">
-                  <img src={twitter} />
+                  <img src={twitter} alt="under-heading" />
                 </a>
               </li>
               <li className=" w-[30px] md:w-[40px] p-2 md:p-3  bg-white hover:-translate-y-2 duration-700 hover:duration-300 rounded-[50%]">
                 <a href="dhirajdagabaj0412@gmail">
-                  <img src={gmail} />
+                  <img src={gmail} alt="under-heading" />
                 </a>
               </li>
               <li className=" w-[30px] md:w-[40px] p-2 md:p-3  bg-white hover:-translate-y-2 duration-700 hover:duration-300 rounded-[50%]">
                 <a href="http://localhost:3000/Resume.docx">
-                  <img src={resume} />
+                  <img src={resume} alt="under-heading" />
                 </a>
               </li>
             </ul>
@@ -92,8 +92,8 @@ function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-4  gap-8 ml-12 md:ml-5">
             <div className=" bg-white w-[150px] hover:-translate-y-3 duration-700 md:w-[250px] h-[250px] text-center  text-slate-400 text-sm md:text-lg font-semibold  ">
-              <ul className="w-20 p-3 mt-2 ml-[30px] md:ml-[60px] md:ml-[37%]  ">
-                <img src={write} />
+              <ul className="w-20 p-3 mt-2 ml-[30px] md:ml-[90px]   ">
+                <img src={write} alt="about-img" />
               </ul>
               <h2 className="p-2 underline font-serif">Working Hard</h2>
 
@@ -102,8 +102,8 @@ function Home() {
               </p>
             </div>
             <div className="flex flex-col bg-white w-[150px] hover:-translate-y-3 duration-700 md:w-[250px] h-[250px] text-center  text-slate-400 text-sm md:text-lg font-semibold  ">
-              <ul className="w-20 p-3 mt-2 ml-[30px] md:ml-[60px] md:ml-[37%]  ">
-                <img src={note} />
+              <ul className="w-20 p-3 mt-2 ml-[30px] md:ml-[90px]  ">
+                <img src={note} alt="about-img" />
               </ul>
               <h2 className="p-2 underline font-serif">UI/UX Design</h2>
 
@@ -112,8 +112,8 @@ function Home() {
               </p>
             </div>
             <div className="flex flex-col bg-white w-[150px] hover:-translate-y-3 duration-700 md:w-[250px] h-[250px] text-center  text-slate-400 text-sm md:text-lg font-semibold  ">
-              <ul className="w-20 p-3 mt-2 ml-[30px] md:ml-[60px] md:ml-[37%]  ">
-                <img src={design} />
+              <ul className="w-20 p-3 mt-2 ml-[30px] md:ml-[90px]  ">
+                <img src={design} alt="about-img" />
               </ul>
               <h2 className="p-2 underline font-serif">Web Design</h2>
 
@@ -122,8 +122,8 @@ function Home() {
               </p>
             </div>
             <div className="flex flex-col bg-white w-[150px] hover:-translate-y-3 duration-700 md:w-[250px] h-[250px] text-center  text-slate-400 text-sm md:text-lg font-semibold  ">
-              <ul className="w-20 p-3 mt-2 ml-[30px] md:ml-[60px] md:ml-[37%]  ">
-                <img src={setting} />
+              <ul className="w-20 p-3 mt-2 ml-[30px] md:ml-[90px]  ">
+                <img src={setting} alt="about-img" />
               </ul>
               <h2 className="p-2 underline font-serif">Web Developement</h2>
 
@@ -134,7 +134,7 @@ function Home() {
           </div>
           <div className=" block md:flex w-full mt-24 m-10">
             <ul className=" w-[200px] md:w-[300px]">
-              <img src={dhiraj} />
+              <img src={dhiraj} alt="about-img" />
             </ul>
             <div className="  md:w-[80%] -ml-7 md:ml-0 md:p-5">
               <div className=" md:-mt-5 m-5 p-7 font-mono  text-4xl font-semibold  bg-white">
@@ -248,7 +248,7 @@ function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 ml-5 md:ml-10">
             <div className="flex flex-col bg-white w-[200px] hover:-translate-y-3 duration-700 md:w-[300px] h-[300px] text-center  text-slate-400 text-sm md:text-lg font-semibold  ">
               <ul className="w-20 p-3 mt-2 ml-[60px] md:ml-[37%]  ">
-                <img src={school} />
+                <img src={school} alt="edu-img" />
               </ul>
               <h2 className="p-2 underline font-serif">School</h2>
               <h2 className="p-2 ">2009-2018</h2>
@@ -259,7 +259,7 @@ function Home() {
             </div>
             <div className="flex flex-col bg-white hover:-translate-y-3 duration-700 w-[200px] md:w-[300px] h-[300px] text-center  text-slate-400 text-sm md:text-lg font-semibold  ">
               <ul className="w-20 p-3 mt-2 ml-[60px] md:ml-[37%]  ">
-                <img src={college} />
+                <img src={college} alt="edu-img" />
               </ul>
               <h2 className="p-2 underline font-serif">Graduation</h2>
               <h2 className="p-2 ">2019-2022</h2>
@@ -271,12 +271,11 @@ function Home() {
                 >
                   G H Raisoni Institude Of Management & Research, pune
                 </a>
-                
               </p>
             </div>
             <div className="flex flex-col bg-white hover:-translate-y-3 duration-700 w-[200px] md:w-[300px] h-[300px] text-center  text-slate-400 text-sm md:text-lg font-semibold  ">
               <ul className="w-20 p-3 mt-2 ml-[60px] md:ml-[37%]  ">
-                <img src={code} />
+                <img src={code} alt="edu-img" />
               </ul>
               <h2 className="p-2 underline font-serif">Training & Skill</h2>
               <h2 className="p-2 ">2022-2023</h2>
@@ -314,6 +313,7 @@ function Home() {
                 <img
                   className="w-[400px] p-4  duration-700 hover:scale-110    "
                   src={Design1}
+                  alt="services-img"
                 />
                 <h2 className="p-2  md:-mb-5 underline text-center font-serif  text-sm md:text-lg font-semibold">
                   Design + Developement
@@ -329,6 +329,7 @@ function Home() {
                 <img
                   className="w-[400px] p-4  duration-700 hover:scale-110    "
                   src={Design2}
+                  alt="services-img"
                 />
                 <h2 className="p-2  md:-mb-5 underline text-center font-serif  text-sm md:text-lg font-semibold">
                   eCommerce
@@ -344,6 +345,7 @@ function Home() {
                 <img
                   className="w-[400px] p-4  duration-700 hover:scale-110    "
                   src={Design3}
+                  alt="services-img"
                 />
                 <h2 className="p-2  md:-mb-5 underline text-center font-serif  text-sm md:text-lg font-semibold">
                   Analytics
@@ -359,6 +361,7 @@ function Home() {
                 <img
                   className="w-[400px] p-4  duration-700 hover:scale-110    "
                   src={Design4}
+                  alt="services-img"
                 />
                 <h2 className="p-2  md:-mb-5 underline text-center font-serif  text-sm md:text-lg font-semibold">
                   Mobile-Friendly
@@ -374,6 +377,7 @@ function Home() {
                 <img
                   className="w-[400px] p-4  duration-700 hover:scale-110    "
                   src={Design5}
+                  alt="services-img"
                 />
                 <h2 className="p-2  md:-mb-5 underline text-center font-serif  text-sm md:text-lg font-semibold">
                   website-Rank
@@ -389,6 +393,7 @@ function Home() {
                 <img
                   className="w-[210px] mx-6 md:mx-16 p-4  duration-700 hover:scale-110    "
                   src={Design6}
+                  alt="services-img"
                 />
                 <h2 className="p-2  md:-mb-5 underline text-center font-serif  text-sm md:text-lg font-semibold">
                   JAVA
@@ -410,41 +415,56 @@ function Home() {
       {/* <!-- ================================ contact =============================== --> */}
 
       <div id="contact">
-      <div className="pt-12 md:pt-24 md:p-12 ">
-      <div className=" bg-midnight  mb-20  rounded-3xl  shadow-2xl justify-center w-[80%] h-42 md:h-36  drop-shadow-2xl mx-[10%] ">
-          <h1 className=" w-[90%] text-lg md:text-4xl justify-self-start text-bold font-serif font-bold text-metal mx-[20%] md:mx-[35%] mt-10 pt-5 ">
-            Contact Me
-          </h1>
+        <div className="pt-12 md:pt-24 md:p-12 ">
+          <div className=" bg-midnight  mb-20  rounded-3xl  shadow-2xl justify-center w-[80%] h-42 md:h-36  drop-shadow-2xl mx-[10%] ">
+            <h1 className=" w-[90%] text-lg md:text-4xl justify-self-start text-bold font-serif font-bold text-metal mx-[20%] md:mx-[35%] mt-10 pt-5 ">
+              Contact Me
+            </h1>
 
-          <h3 className=" text-sm md:text-lg text-slate w-full p-7 pt-0  md:mx-[15%] md:mt-5">
-            I always open to discussing product design work or partnership
-            opportunities.
-          </h3>
+            <h3 className=" text-sm md:text-lg text-slate w-full p-7 pt-0  md:mx-[15%] md:mt-5">
+              I always open to discussing product design work or partnership
+              opportunities.
+            </h3>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-16">
+            <div className="w-[250px] text-center h-[250px]">
+              <img
+                className="w-[60px] ml-24  m-9 "
+                src={location}
+                alt="contact-img"
+              />
+              <h1 className="text-3xl font-bold m-4">Location</h1>
+              <h3>Pune, Maharashtra, india</h3>
+            </div>
+            <div className="w-[250px] text-center h-[250px]">
+              <img
+                className="w-[60px] ml-24 m-9 "
+                src={email}
+                alt="contact-img"
+              />
+              <h1 className="text-3xl font-bold m-4">Email</h1>
+              <h3>dhirajdagabaj0412@gmail.com</h3>
+            </div>
+            <div className="w-[250px] text-center h-[250px]">
+              <img
+                className="w-[60px] ml-24 m-9 "
+                src={phone}
+                alt="contact-img"
+              />
+              <h1 className="text-3xl font-bold m-4">Phone</h1>
+              <h3>+91 9096940153</h3>
+            </div>
+            <div className="w-[250px] text-center h-[250px]">
+              <img
+                className="w-[60px] ml-24 m-9 "
+                src={portfolio}
+                alt="contact-img"
+              />
+              <h1 className="text-3xl font-bold m-4">Portfolio</h1>
+              <h3>https://github.com/devDhiraj12</h3>
+            </div>
+          </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-16">
-          <div className="w-[250px] text-center h-[250px]">
-            <img className="w-[60px] ml-24  m-9 " src={location} />
-            <h1 className="text-3xl font-bold m-4">Location</h1>
-            <h3>Pune, Maharashtra, india</h3>
-          </div>
-          <div className="w-[250px] text-center h-[250px]">
-            <img className="w-[60px] ml-24 m-9 " src={email} />
-            <h1 className="text-3xl font-bold m-4">Email</h1>
-            <h3>dhirajdagabaj0412@gmail.com</h3>
-          </div>
-          <div className="w-[250px] text-center h-[250px]">
-            <img className="w-[60px] ml-24 m-9 " src={phone} />
-            <h1 className="text-3xl font-bold m-4">Phone</h1>
-            <h3>+91 9096940153</h3>
-          </div>
-          <div className="w-[250px] text-center h-[250px]">
-            <img className="w-[60px] ml-24 m-9 " src={portfolio} />
-            <h1 className="text-3xl font-bold m-4">Portfolio</h1>
-            <h3>https://github.com/devDhiraj12</h3>
-          </div>
-        </div>
-      </div>
-       
       </div>
     </div>
   );
