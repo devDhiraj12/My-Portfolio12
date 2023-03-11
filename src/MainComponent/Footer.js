@@ -31,6 +31,8 @@ function Footer() {
           <ul className="  mt-12 font-serif text-lg md:text-3xl font-bold  ">
             <li>
               <a href="/#home">devDhiraj12</a>
+
+              
             </li>
           </ul>
           <div className="underline1"></div>
