@@ -4,7 +4,16 @@ import github from "../Data/github.png";
 import twitter from "../Data/twitter.png";
 import gmail from "../Data/gmail.png";
 import resume from "../Data/cv.png";
-import { Input, TextField } from "@mui/material";
+import CloseIcon from "@mui/icons-material/Close";
+import {
+  Alert,
+  Button,
+  Collapse,
+  IconButton,
+  Input,
+  Snackbar,
+  TextField,
+} from "@mui/material";
 import { useForm } from "react-hook-form";
 import { Box } from "@mui/system";
 import axios from "axios";
@@ -14,7 +23,7 @@ function Footer() {
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    // setuser(data)
+    setOpen(true);
     axios
       .post("http://localhost:8899/api/saveData", data)
       .then((response) => response.data)
@@ -24,15 +33,36 @@ function Footer() {
     document.getElementById("formdata").reset();
   };
 
+  const [open, setOpen] = React.useState(false);
+
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setOpen(false);
+  };
+
+  const action = (
+    <React.Fragment>
+      <IconButton
+        size="small"
+        aria-label="close"
+        color="inherit"
+        onClick={handleClose}
+      >
+        <CloseIcon fontSize="small" />
+      </IconButton>
+    </React.Fragment>
+  );
+
   return (
-    <div className="bg-slate ">
+    <div className="footerBack ">
       <div className="   grid  grid-cols-1 md:grid-cols-3 gap-12  p-5 md:p-8 text-center">
         <div className=" ">
           <ul className="  mt-12 font-serif text-lg md:text-3xl font-bold  ">
             <li>
               <a href="/#home">devDhiraj12</a>
-
-              
             </li>
           </ul>
           <div className="underline1"></div>
@@ -81,7 +111,7 @@ function Footer() {
                 label="Full Name"
                 maxRows={7}
                 size="small"
-
+                autoComplete="off"
               />
               <TextField
                 {...register("email", {
@@ -90,12 +120,15 @@ function Footer() {
                 })}
                 label="Email Id"
                 size="small"
+                autoComplete="off"
               />
               <TextField
                 {...register("review", { maxLength: 1199 })}
                 label="Suggest"
                 multiline
                 rows={2}
+                autoComplete="off"
+
                 // variant="filled"
               />
 
@@ -103,6 +136,15 @@ function Footer() {
             </form>
           </Box>
         </div>
+      </div>
+      <div>
+        <Snackbar
+          open={open}
+          autoHideDuration={3000}
+          onClose={handleClose}
+          message="sucessfully shared"
+          action={action}
+        />
       </div>
     </div>
   );

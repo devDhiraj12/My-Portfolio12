@@ -16,7 +16,7 @@ import Checkbox from "@mui/material/Checkbox";
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 
-const Admin = () => {
+const SignIn = () => {
   const avatarStyle = { backgroundColor: "#1bbd7e" };
   const btnstyle = { margin: "8px 0" };
   const textstyle = { margin: "10px 0" };
@@ -36,7 +36,7 @@ const Admin = () => {
   const signin = () => {
     console.log(password);
     if (password === "dhiraj0412") {
-      navigate(`/users`);
+    //   navigate(`/users`);
     } else {
       console.log("please enter valid password");
     }
@@ -59,7 +59,7 @@ const Admin = () => {
             <Avatar style={avatarStyle}>
               <LockPersonOutlinedIcon />
             </Avatar>
-            <h2>Sign Up</h2>
+            <h2>Sign In</h2>
           </Grid>
           <TextField
             label="Username"
@@ -69,6 +69,7 @@ const Admin = () => {
             required
             size="small"
           />
+         
           <TextField
             {...register("password", {
               required: true,
@@ -100,14 +101,11 @@ const Admin = () => {
           <Typography>
             <Link href="#">Forgot password ?</Link>
           </Typography>
-          <Typography>
-            {" "}
-            Already have an account ?<Link href="/signin">Sign in</Link>
-          </Typography>
+          
         </Paper>
       </Grid>
     </div>
   );
 };
 
-export default Admin;
+export default SignIn;
