@@ -35,11 +35,11 @@ const SignIn = () => {
 
   const signin = () => {
     console.log(password);
-    if (password === "dhiraj0412") {
-    //   navigate(`/users`);
-    } else {
-      console.log("please enter valid password");
-    }
+    navigate(`/users`);
+    // if (password === "dhiraj") {
+    // } else {
+    //   console.log("please enter valid password");
+    // }
   };
 
   return (

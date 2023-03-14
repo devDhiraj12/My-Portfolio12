@@ -87,7 +87,7 @@ function Header() {
         </ListItem>
         <ListItem disablePadding>
           <ListItemButton>
-            <Link href="/admin" underline="none">
+            <Link href="/signup" underline="none">
               Admin
             </Link>
           </ListItemButton>
