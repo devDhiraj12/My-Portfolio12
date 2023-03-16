@@ -25,7 +25,7 @@ import portfolio from "../Data/portfolio.png";
 
 function Home() {
   return (
-    <div className="main-page-content bg-slate -z-10 overflow-hidden">
+    <div className="main-page-content bg-slate dark:bg-slate-800 -z-10 overflow-hidden">
       {/* <!-- ================================ home =============================== --> */}
 
       <div

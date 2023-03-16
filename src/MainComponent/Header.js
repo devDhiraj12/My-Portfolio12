@@ -11,7 +11,7 @@ import {
   ListItemIcon,
   ListItemText,
 } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import HomeIcon from "@mui/icons-material/Home";
 import Home from "./Home";
@@ -101,10 +101,14 @@ function Header() {
     navigate(`/signup`);
   };
 
+
+ 
+
   return (
     <div>
       <nav className="fixed flex flex-rows justify-between h-16 w-full z-20  p-3  text-white text-bold bg-midnight shadow-inner ">
-        <ul className=" md:ml-8 font-serif text-lg md:text-3xl text-metal font-bold  ">
+        <ul className=" flex md:ml-8 font-serif text-lg md:text-3xl text-metal font-bold  ">
+         
           <li>
             <a href="/#home">devDhiraj12</a>
           </li>
@@ -147,7 +151,12 @@ function Header() {
             <a href="/#contact">Contact</a>
           </li>
           <li className="-mx-8">
-            <img className="w-12 -mt-2 mx-2 transition ease-in duration-300 hover:scale-125 " alt="nevigate" onClick={gotoadmin} src={login} />
+            <img
+              className="w-12 -mt-2 mx-2 transition ease-in duration-300 hover:scale-125 "
+              alt="nevigate"
+              onClick={gotoadmin}
+              src={login}
+            />
           </li>
         </ul>
       </nav>
