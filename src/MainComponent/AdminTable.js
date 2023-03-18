@@ -28,7 +28,7 @@ function AdminTable() {
   };
   return (
     <div className=" py-12  bg-slate p-3 md:p-12  ">
-      <h1 className="font-bold text-xl md:text-2xl m-8 text-midnight underline">
+      <h1 className="font-bold text-xl md:text-2xl m-8 mt-16 text-midnight underline">
         User's Information :
       </h1>
       <div >

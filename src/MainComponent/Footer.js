@@ -57,10 +57,10 @@ function Footer() {
   );
 
   return (
-    <div className="footerBack ">
+    <div className="footerBack  h-[650px] md:h-full">
       <div className="   grid  grid-cols-1 md:grid-cols-3 gap-12  p-5 md:p-8 text-center">
         <div className=" ">
-          <ul className="  mt-12 font-serif text-lg md:text-3xl font-bold  ">
+          <ul className="  nameBtn mt-4 mb-16 w-[350px] mx-auto  md:py-5 font-serif text-[50px] drop-shadow-4xl md:text-3xl font-bold  ">
             <li>
               <a href="/#home">devDhiraj12</a>
             </li>
@@ -68,28 +68,28 @@ function Footer() {
           <div className="underline1"></div>
           <div className="underline2"></div>
           <div>
-            <ul className=" grid  grid-cols-5 mt-3 md:mt-7   ">
-              <li className=" w-[20px] md:w-[25px]  hover:-translate-y-2 duration-700 hover:duration-300  ">
+            <ul className=" flex justify-around mt-7 ">
+              <li className=" w-[35px]   md:hover:-translate-y-2 duration-700 hover:duration-300  ">
                 <a href="https://www.linkedin.com/in/dhiraj-dagabaj-1a3573248/">
                   <img src={linkedin} alt="under-heading" />
                 </a>
               </li>
-              <li className=" w-[20px] md:w-[25px] hover:-translate-y-2 duration-700 hover:duration-300 ">
+              <li className=" w-[35px]  hmd:over:-translate-y-2 duration-700 hover:duration-300 ">
                 <a href="https://github.com/devDhiraj12">
                   <img src={github} alt="under-heading" />
                 </a>
               </li>
-              <li className=" w-[20px] md:w-[25px] hover:-translate-y-2 duration-700 hover:duration-300 ">
+              <li className=" w-[35px]  hmd:over:-translate-y-2 duration-700 hover:duration-300 ">
                 <a href="https://twitter.com/Dhiraj82866985">
                   <img src={twitter} alt="under-heading" />
                 </a>
               </li>
-              <li className=" w-[20px] md:w-[25px] hover:-translate-y-2 duration-700 hover:duration-300 ">
-                <a href="dhirajdagabaj0412@gmail">
+              <li className=" w-[35px]  hmd:over:-translate-y-2 duration-700 hover:duration-300 ">
+                <a href="https://www.bing.com/search?q=gmail%20login&pc=0SLN&ptag=C19N9998D051822A00ED787AAB&form=CONBDF&conlogo=CT3210127">
                   <img src={gmail} alt="under-heading" />
                 </a>
               </li>
-              <li className=" w-[20px] md:w-[25px] hover:-translate-y-2 duration-700 hover:duration-300 ">
+              <li className=" w-[35px]  hmd:over:-translate-y-2 duration-700 hover:duration-300 ">
                 <a href="http://localhost:3000/Resume.docx">
                   <img src={resume} alt="under-heading" />
                 </a>
@@ -109,9 +109,10 @@ function Footer() {
               <TextField
                 {...register("fullname", { required: true, maxLength: 20 })}
                 label="Full Name"
-                maxRows={7}
                 size="small"
                 autoComplete="off"
+                error={""}
+
               />
               <TextField
                 {...register("email", {
@@ -121,6 +122,7 @@ function Footer() {
                 label="Email Id"
                 size="small"
                 autoComplete="off"
+                error={""}
               />
               <TextField
                 {...register("review", { maxLength: 1199 })}

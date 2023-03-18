@@ -17,24 +17,26 @@ function App() {
     setloading(true);
     setTimeout(() => {
       setloading(false);
-    }, 5000);
+    }, 4000);
   }, []);
 
   return (
     <div>
-      {loading ? <Loading /> : 
-      <BrowserRouter>
-        <Header />
+      {loading ? (
+        <Loading />
+      ) : (
+        <BrowserRouter>
+          <Header />
 
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/signup" element={<Admin />} />
-          <Route exact path="/users" element={<AdminTable />} />
-          <Route exact path="/signin" element={<SignIn />} />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
-      }
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/signup" element={<Admin />} />
+            <Route exact path="/users" element={<AdminTable />} />
+            <Route exact path="/signin" element={<SignIn />} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      )}
     </div>
   );
 }

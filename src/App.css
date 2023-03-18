@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+
 .App {
   text-align: center;
 }
@@ -49,13 +51,21 @@
 } */
 
 #Homepage h1:nth-child(1) {
-  color: transparent;
-  -webkit-text-stroke: 2px #5c6965;
+  color: black;
+  -webkit-text-stroke: 2px #060808;
+  font-family: "labster", regular;
+}
+
+@media screen and (min-width: 760px) {
+  #Homepage h1:nth-child(1) {
+    -webkit-text-stroke: 5px #060808;
+  }
 }
 
 #Homepage h1:nth-child(2) {
-  color: #5c6965;
+  color: #1f8ed8;
   animation: animate 4s ease-in-out infinite;
+  font-family: "labster", regular;
 }
 
 @keyframes animate {
@@ -106,12 +116,6 @@
   transform: rotate(-135deg);
 }
 
-.adminpage {  
-  /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(56,60,129,0.9921218487394958) 56%, rgba(0,212,255,1) 100%); */
-  background-image: url(./Data/adminback.jpeg);
-
-  border-bottom: 2px solid black;
-}
 .footerBack {
   /* background-image: url(./Data/footerback.jpeg);
   opacity: 80%; */
@@ -130,7 +134,7 @@
   margin-top: -50px;
   border-radius: 5px;
   background: #1e3f57;
-  animation: dot1_ 4s cubic-bezier(0.55,0.3,0.24,0.99) infinite;
+  animation: dot1_ 4s cubic-bezier(0.55, 0.3, 0.24, 0.99) infinite;
 }
 
 .loader:nth-child(2) {
@@ -156,21 +160,24 @@
 }
 
 @keyframes dot1_ {
-  3%,97% {
+  3%,
+  97% {
     width: 160px;
     height: 100px;
     margin-top: -50px;
     margin-left: -80px;
   }
 
-  30%,36% {
+  30%,
+  36% {
     width: 80px;
     height: 120px;
     margin-top: -60px;
     margin-left: -40px;
   }
 
-  63%,69% {
+  63%,
+  69% {
     width: 40px;
     height: 80px;
     margin-top: -40px;
@@ -179,21 +186,24 @@
 }
 
 @keyframes dot2_ {
-  3%,97% {
+  3%,
+  97% {
     height: 90px;
     width: 150px;
     margin-left: -75px;
     margin-top: -45px;
   }
 
-  30%,36% {
+  30%,
+  36% {
     width: 70px;
     height: 96px;
     margin-left: -35px;
     margin-top: -48px;
   }
 
-  63%,69% {
+  63%,
+  69% {
     width: 32px;
     height: 60px;
     margin-left: -16px;
@@ -202,14 +212,16 @@
 }
 
 @keyframes dot3_ {
-  3%,97% {
+  3%,
+  97% {
     height: 20px;
     width: 40px;
     margin-left: -20px;
     margin-top: 50px;
   }
 
-  30%,36% {
+  30%,
+  36% {
     width: 8px;
     height: 8px;
     margin-left: -5px;
@@ -217,11 +229,26 @@
     border-radius: 8px;
   }
 
-  63%,69% {
+  63%,
+  69% {
     width: 16px;
     height: 4px;
     margin-left: -8px;
     margin-top: -37px;
     border-radius: 10px;
+  }
+}
+
+.font {
+  font-family: "labster", regular;
+}
+
+.nameBtn {
+  box-shadow: 0px 20px 21px rgba(0, 0, 0, 1);
+}
+
+@media screen and (max-width: 760px) {
+  .nameBtn {
+    box-shadow: 0px 20px 22px -13px rgba(0, 0, 0, 1);
   }
 }

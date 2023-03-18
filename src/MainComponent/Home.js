@@ -22,6 +22,7 @@ import location from "../Data/location.png";
 import email from "../Data/email.png";
 import phone from "../Data/telephone.png";
 import portfolio from "../Data/portfolio.png";
+import { Divider } from "@mui/material";
 
 function Home() {
   return (
@@ -30,39 +31,39 @@ function Home() {
 
       <div
         id="home"
-        className=" flex flex-col bg-black h-[300px] md:h-[600px] "
+        className=" flex flex-col bg-slate  h-[650px] md:h-[600px] "
       >
-        <div id="Homepage" className="block">
-          <h1 className=" text-[30px] md:text-[150px] font-bold pt-[110px]  mx-10 sm:mx-44  ">
+        <div id="Homepage" className="block m-auto">
+          <h1 className=" text-[65px] md:text-[190px] font-bold mt-[10px]  md:pt-[110px]  mx-3   ">
             devDhiraj12
           </h1>
-          <h1 className=" text-[30px] md:text-[150px] font-bold -mt-[225px] mx-10 sm:mx-44 ">
+          <h1 className=" text-[65px] md:text-[190px] font-bold -mt-[99px]  md:-mt-[290px] mx-3  ">
             devDhiraj12
           </h1>
 
-          <div className="absolute mt-40 md:mt-0 justify-center align-middle">
-            <ul className=" grid grid-cols-5  mx-[20px] md:mx-[500px] mt-10 md:-mt-3 gap-5 md:gap-5 ">
-              <li className=" w-[30px] md:w-[40px] p-2 md:p-3  bg-white  hover:-translate-y-2 duration-700 hover:duration-300  rounded-[50%]">
+          <div>
+            <ul className=" flex flex-row justify-around  m-auto   md:mx-20 md:w-[600px] mt-5 md:mt-0   ">
+              <li className=" w-[50px] md:w-[50px] p-2 md:p-3  bg-white border-2   hover:-translate-y-4 duration-700 hover:duration-300  rounded-[50%]">
                 <a href="https://www.linkedin.com/in/dhiraj-dagabaj-1a3573248/">
                   <img src={linkedin} alt="under-heading" />
                 </a>
               </li>
-              <li className=" w-[30px] md:w-[40px] p-2 md:p-3  bg-white hover:-translate-y-2 duration-700 hover:duration-300 rounded-[50%]">
+              <li className=" w-[50px] md:w-[50px] p-2 md:p-3  bg-white border-2 shadow-inner hover:-translate-y-4 duration-700 hover:duration-300 rounded-[50%]">
                 <a href="https://github.com/devDhiraj12">
                   <img src={github} alt="under-heading" />
                 </a>
               </li>
-              <li className=" w-[30px] md:w-[40px] p-2 md:p-3  bg-white hover:-translate-y-2 duration-700 hover:duration-300 rounded-[50%]">
+              <li className=" w-[50px] md:w-[50px] p-2 md:p-3  bg-white border-2 shadow-inner hover:-translate-y-4 duration-700 hover:duration-300 rounded-[50%]">
                 <a href="https://twitter.com/Dhiraj82866985">
                   <img src={twitter} alt="under-heading" />
                 </a>
               </li>
-              <li className=" w-[30px] md:w-[40px] p-2 md:p-3  bg-white hover:-translate-y-2 duration-700 hover:duration-300 rounded-[50%]">
-                <a href="dhirajdagabaj0412@gmail">
+              <li className=" w-[50px] md:w-[50px] p-2 md:p-3  bg-white border-2 shadow-inner hover:-translate-y-4 duration-700 hover:duration-300 rounded-[50%]">
+                <a href="https://www.bing.com/search?q=gmail%20login&pc=0SLN&ptag=C19N9998D051822A00ED787AAB&form=CONBDF&conlogo=CT3210127">
                   <img src={gmail} alt="under-heading" />
                 </a>
               </li>
-              <li className=" w-[30px] md:w-[40px] p-2 md:p-3  bg-white hover:-translate-y-2 duration-700 hover:duration-300 rounded-[50%]">
+              <li className=" w-[50px] md:w-[50px] p-2 md:p-3  bg-white border-2 shadow-inner hover:-translate-y-4 duration-700 hover:duration-300 rounded-[50%]">
                 <a href="http://localhost:3000/Resume.docx">
                   <img src={resume} alt="under-heading" />
                 </a>
@@ -76,11 +77,11 @@ function Home() {
 
       <div id="about" className="bg-slate inset-0 ">
         <div className="pt-12 md:pt-24 md:p-12 ">
-          <div className=" bg-midnight  mb-20  rounded-3xl shadow-2xl justify-center w-[95%] h-42 md:h-46  drop-shadow-2xl mx-[3%] ">
-            <h1 className=" text-lg  md:text-3xl  text-bold font-serif font-bold text-metal mx-[10%] md:mx-[35%] w-full   mt-10    pt-5">
+          <div className=" bg-midnight  mb-20  rounded-3xl shadow-2xl mx-auto justify-center w-[80%] h-42 md:h-46  drop-shadow-2xl  ">
+            <h1 className=" text-lg  md:text-3xl  text-bold font-serif font-bold text-metal mx-[30%] md:mx-[35%] w-full   mt-10    pt-5">
               What I Do
             </h1>
-            <h3 className=" text-sm md:text-lg  text-slate w-full p-12  pt-0 mx-[0%]  md:mt-5">
+            <h3 className=" text-sm md:text-lg  text-slate w-full p-6  pt-2 indent-12 md:indent-32  md:mt-5">
               At present time I'm working on a multi-role, as a Web Developer I
               design and create various websites. And as UI/UX Designer I create
               many designs for Web Applications and Mobile applications. I
@@ -90,9 +91,9 @@ function Home() {
               handle. In addition, I also create content for the site.
             </h3>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-4  gap-8 ml-12 md:ml-5">
-            <div className=" bg-white w-[150px] hover:-translate-y-3 duration-700 md:w-[250px] h-[250px] text-center  text-slate-400 text-sm md:text-lg font-semibold  ">
-              <ul className="w-20 p-3 mt-2 ml-[30px] md:ml-[90px]   ">
+          <div className="grid grid-cols-1  md:grid-cols-4  gap-8 ">
+            <div className=" bg-white   m-auto  w-[80%] hover:-translate-y-3 duration-700 md:w-[300px] h-[200px] px-5 md:h-[250px]  text-center  text-slate-400 text-sm md:text-lg font-semibold  ">
+              <ul className="w-20 p-3 mt-2 m-auto  ">
                 <img src={write} alt="about-img" />
               </ul>
               <h2 className="p-2 underline font-serif">Working Hard</h2>
@@ -101,8 +102,8 @@ function Home() {
                 Always believe in hard-work in my profession
               </p>
             </div>
-            <div className="flex flex-col bg-white w-[150px] hover:-translate-y-3 duration-700 md:w-[250px] h-[250px] text-center  text-slate-400 text-sm md:text-lg font-semibold  ">
-              <ul className="w-20 p-3 mt-2 ml-[30px] md:ml-[90px]  ">
+            <div className="flex flex-col bg-white   m-auto hover:-translate-y-3 duration-700  w-[80%] md:w-[300px] h-[200px] px-5 md:h-[250px]  text-center  text-slate-400 text-sm md:text-lg font-semibold  ">
+              <ul className="w-20 p-3 mt-2 m-auto mb-2  ">
                 <img src={note} alt="about-img" />
               </ul>
               <h2 className="p-2 underline font-serif">UI/UX Design</h2>
@@ -111,8 +112,8 @@ function Home() {
                 Love to do UI/UX design for new product
               </p>
             </div>
-            <div className="flex flex-col bg-white w-[150px] hover:-translate-y-3 duration-700 md:w-[250px] h-[250px] text-center  text-slate-400 text-sm md:text-lg font-semibold  ">
-              <ul className="w-20 p-3 mt-2 ml-[30px] md:ml-[90px]  ">
+            <div className="flex flex-col bg-white  m-auto hover:-translate-y-3 duration-700  w-[80%] md:w-[300px] h-[200px] px-5 md:h-[250px]  text-center  text-slate-400 text-sm md:text-lg font-semibold  ">
+              <ul className="w-20 p-3 mt-2 m-auto mb-2  ">
                 <img src={design} alt="about-img" />
               </ul>
               <h2 className="p-2 underline font-serif">Web Design</h2>
@@ -121,8 +122,8 @@ function Home() {
                 Passionate about Web Design from start{" "}
               </p>
             </div>
-            <div className="flex flex-col bg-white w-[150px] hover:-translate-y-3 duration-700 md:w-[250px] h-[250px] text-center  text-slate-400 text-sm md:text-lg font-semibold  ">
-              <ul className="w-20 p-3 mt-2 ml-[30px] md:ml-[90px]  ">
+            <div className="flex flex-col bg-white  m-auto hover:-translate-y-3 duration-700  w-[80%] md:w-[300px] h-[200px] px-5 md:h-[250px]  text-center  text-slate-400 text-sm md:text-lg font-semibold  ">
+              <ul className="w-20 p-3 mt-2 m-auto mb-2  ">
                 <img src={setting} alt="about-img" />
               </ul>
               <h2 className="p-2 underline font-serif">Web Developement</h2>
@@ -133,15 +134,15 @@ function Home() {
             </div>
           </div>
           <div className=" block md:flex w-full mt-24 m-10">
-            <ul className=" w-[200px] md:w-[300px]">
+            <ul className=" w-[250px] m-12 md:w-[300px]">
               <img src={dhiraj} alt="about-img" />
             </ul>
-            <div className="  md:w-[80%] -ml-7 md:ml-0 md:p-5">
-              <div className=" md:-mt-5 m-5 p-7 font-mono  text-4xl font-semibold  bg-white">
-                <h1>Hello ! This is Dhiraj</h1>
+            <div className=" w-[90%] md:w-[65%] mx-auto -ml-7 md:ml-0 md:p-5">
+              <div className=" mx-auto p-7 font-mono py-4  text-white decoration-8 text-xl md:text-4xl font-semibold  bg-midnight">
+                <h1>Hello ! This is Dhiraj.</h1>
               </div>
-              <div className="tracking-wider p-7 pt-1 w-[90%]">
-                <p className="wow 	 fadeIn">
+              <div className="tracking-wider p-7 pt-9 w-[100%]">
+                <p className=" text-sm  md:text-xl indent-16	md:indent-32 ">
                   I am a web developer from Pune, India. I enjoy building
                   everything from small business sites to rich interactive web
                   apps. if you are a business seeking a web presence or an
@@ -165,13 +166,13 @@ function Home() {
               </div>
               <div>
                 <a
-                  className="md:px-5 duration-700 p-2 rounded-lg mx-2 md:mx-4 bg-white hover:bg-metal shadow-lg"
+                  className="md:px-5 duration-700 p-2 rounded-lg mx-8 md:mx-12 bg-white hover:bg-metal shadow-lg"
                   href="http://localhost:3000/Resume.docx"
                 >
                   See Resume
                 </a>
                 <a
-                  className="md:px-5 duration-700 p-2 rounded-lg mx-2 md:mx-4 bg-white hover:bg-metal shadow-lg"
+                  className="md:px-5 duration-700 p-2 rounded-lg  md:mx-4 bg-white hover:bg-metal shadow-lg"
                   href="#contact"
                 >
                   Hire Me
@@ -194,12 +195,12 @@ function Home() {
                 My Skill
               </h1>
 
-              <h3 className=" text-sm md:text-lg text-slate w-full p-2 mx-[15%]  md:mt-5">
+              <h3 className=" text-sm md:text-lg text-slate w-full p-6 indent-8 md:mx-[15%] pt-2 md:mt-5">
                 i value simple content structure, clean design pattern, and
                 thoughful interactions.
               </h3>
             </div>
-            <p className=" w-[80%] ml-6 md:w-[85%] mt-20 md:mx-12 text-sm md:text-lg  indent-12 text-black  font-medium  md:tracking-wider  md:leading-relaxed text-justify">
+            <p className=" w-[80%] m-auto md:w-[85%] mt-20 md:mx-12 text-sm md:text-lg  indent-12 text-black  font-medium  md:tracking-wider  md:leading-relaxed text-justify">
               UI/UX involves planning and iterating a site's structure and
               layout. Once the proper information architecture is in place, I
               design the visual layer to create a beautiful user experience.
@@ -212,9 +213,9 @@ function Home() {
 
             <div
               id="language"
-              className="font-semibold  md:w-[85%] text-black  text-sm md:text-lg  ml-6 md:mx-16 mt-12 lisl trt-decimaacking-wider leading-7"
+              className="font-semibold  md:w-[85%] text-black p-4 text-sm md:text-lg  ml-6 md:mx-16 mt-12   leading-7"
             >
-              <h1 className="text-pink-500">Technical Skills :--</h1>
+              <h1 className="text-2xl py-4 font-bold">Technical Skills :--</h1>
               <li> Programming Languages : CORE JAVA, JAVA8.</li>
               <li>Web Technology : HTML, CSS, JAVASCRIPT.</li>
               <li>Frameworks : Spring Boot, Hibernate, REACT.JS</li>
@@ -222,7 +223,7 @@ function Home() {
               <li>Software : Intellij IDEA, Eclipse, Spring Tool Suit.</li>
               <li>Tools : GitHub, Maven, Gradle, Tailwind CSS, Matrial Ui</li>
               <li>
-                Other : Apache Tomcatserver, Rest Api, Web Services,
+                Others : Apache Tomcatserver, Rest Api, Web Services,
                 Microservices, JSON,Lombok,Swagger, React-Redux.
               </li>
             </div>
@@ -237,17 +238,17 @@ function Home() {
       <div id="education" className="bg-slate inset-0 ">
         <div className="pt-12 md:pt-24 md:p-12 ">
           <div className=" bg-midnight  mb-20  rounded-3xl shadow-2xl justify-center w-[80%] h-42 md:h-36  drop-shadow-2xl mx-[10%] ">
-            <h1 className=" text-lg  md:text-3xl  text-bold font-serif font-bold text-metal mx-[10%] md:mx-[35%] w-full   mt-10    pt-5">
+            <h1 className=" text-lg  md:text-3xl  text-bold font-serif font-bold text-metal mx-[20%] md:mx-[35%] w-full   mt-10    pt-5">
               Educational Story
             </h1>
-            <h3 className=" text-sm md:text-lg  text-slate w-full p-2  pt-0 mx-[10%]  md:mt-5">
+            <h3 className=" text-sm md:text-lg  text-slate w-full p-6 indent-8  pt-2 md:mx-[15%]   md:mt-5">
               I like to code things to scratch, and enjoying bringing ideas to
               life in the browser.
             </h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 ml-5 md:ml-10">
-            <div className="flex flex-col bg-white w-[200px] hover:-translate-y-3 duration-700 md:w-[300px] h-[300px] text-center  text-slate-400 text-sm md:text-lg font-semibold  ">
-              <ul className="w-20 p-3 mt-2 ml-[60px] md:ml-[37%]  ">
+            <div className="flex flex-col mx-auto p-3 bg-white w-[80%] hover:-translate-y-3 duration-700 md:w-[300px] h-[250px] md:h-[300px] text-center  text-slate-400 text-sm md:text-lg font-semibold  ">
+              <ul className="w-20 p-3 mt-2 mx-auto  ">
                 <img src={school} alt="edu-img" />
               </ul>
               <h2 className="p-2 underline font-serif">School</h2>
@@ -257,8 +258,8 @@ function Home() {
                 Kharadi, Pune, 411014.
               </p>
             </div>
-            <div className="flex flex-col bg-white hover:-translate-y-3 duration-700 w-[200px] md:w-[300px] h-[300px] text-center  text-slate-400 text-sm md:text-lg font-semibold  ">
-              <ul className="w-20 p-3 mt-2 ml-[60px] md:ml-[37%]  ">
+            <div className="flex flex-col m-auto p-3 bg-white hover:-translate-y-3 duration-700  w-[80%] md:w-[300px] h-[250px] md:h-[300px] text-center  text-slate-400 text-sm md:text-lg font-semibold  ">
+              <ul className="w-20 p-3 mt-2 mx-auto  ">
                 <img src={college} alt="edu-img" />
               </ul>
               <h2 className="p-2 underline font-serif">Graduation</h2>
@@ -273,8 +274,8 @@ function Home() {
                 </a>
               </p>
             </div>
-            <div className="flex flex-col bg-white hover:-translate-y-3 duration-700 w-[200px] md:w-[300px] h-[300px] text-center  text-slate-400 text-sm md:text-lg font-semibold  ">
-              <ul className="w-20 p-3 mt-2 ml-[60px] md:ml-[37%]  ">
+            <div className="flex flex-col m-auto p-3 bg-white hover:-translate-y-3 duration-700  w-[80%]  md:w-[300px] h-[250px] md:h-[300px] text-center  text-slate-400 text-sm md:text-lg font-semibold  ">
+              <ul className="w-20 p-3 mt-2 mx-auto  ">
                 <img src={code} alt="edu-img" />
               </ul>
               <h2 className="p-2 underline font-serif">Training & Skill</h2>
@@ -299,19 +300,19 @@ function Home() {
         <div className=" inset-0">
           <div className="pt-12 md:pt-24 md:p-12 ">
             <div className=" bg-midnight  mb-20  rounded-3xl  shadow-2xl justify-center w-[80%] h-42 md:h-36  drop-shadow-2xl mx-[10%] ">
-              <h1 className=" w-[90%] text-lg md:text-4xl justify-self-start text-bold font-serif font-bold text-metal mx-[20%] md:mx-[35%] mt-10 pt-5 ">
+              <h1 className=" w-[90%] text-lg md:text-4xl justify-self-start text-bold font-serif font-bold text-metal mx-[20%] md:mx-[40%] mt-10 mb-2 pt-5 ">
                 Service List
               </h1>
 
-              <h3 className=" text-sm md:text-lg text-slate w-full p-7 pt-0  md:mx-[20%] md:mt-5">
+              <h3 className=" text-sm md:text-lg text-slate w-full p-7 pt-0  md:mx-[30%] md:mt-5">
                 I always want to make things that make a difference
               </h3>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-              <div className="   bg-white  overflow-hidden">
+            <div className="grid grid-cols-1 md:grid-cols-3 m-3  gap-12">
+              <div className="   px-5  mx-auto  w-[80%] bg-white overflow-hidden">
                 {/* <img src={#}/> */}
                 <img
-                  className="w-[400px] p-4  duration-700 hover:scale-110    "
+                  className="w-[400px] p-4 m-auto duration-700 hover:scale-110    "
                   src={Design1}
                   alt="services-img"
                 />
@@ -319,12 +320,12 @@ function Home() {
                   Design + Developement
                 </h2>
 
-                <p className=" p-3 text-center md:p-8 mt-2 font-semibold">
+                <p className=" text-center p-3 text-lg mt-2 font-semibold">
                   Clean, modern designs - optimized for performance, search
                   engines, and converting users to customers.{" "}
                 </p>
               </div>
-              <div className="    bg-white  overflow-hidden">
+              <div className="   mx-auto px-5 w-[80%] bg-white overflow-hidden">
                 {/* <img src={#}/> */}
                 <img
                   className="w-[400px] p-4  duration-700 hover:scale-110    "
@@ -335,12 +336,12 @@ function Home() {
                   eCommerce
                 </h2>
 
-                <p className=" p-3 text-center md:p-8 mt-2 font-semibold">
+                <p className=" text-center p-3 text-lg mt-2 font-semibold">
                   Integration of eCommerce platforms, payment gateways, custom
                   product templates, and more.
                 </p>
               </div>
-              <div className="    bg-white  overflow-hidden">
+              <div className="      mx-auto  px-5 w-[80%] bg-white overflow-hidden">
                 {/* <img src={#}/> */}
                 <img
                   className="w-[400px] p-4  duration-700 hover:scale-110    "
@@ -351,12 +352,12 @@ function Home() {
                   Analytics
                 </h2>
 
-                <p className=" p-3 text-center md:p-8 mt-2 font-semibold">
+                <p className=" text-center p-3 text-lg mt-2 font-semibold">
                   Get insights into who is browsing your site so that you can
                   make smarter business decisions.
                 </p>
               </div>
-              <div className="    bg-white  overflow-hidden">
+              <div className="   mx-auto px-5 w-[80%] bg-white overflow-hidden">
                 {/* <img src={#}/> */}
                 <img
                   className="w-[400px] p-4  duration-700 hover:scale-110    "
@@ -367,12 +368,12 @@ function Home() {
                   Mobile-Friendly
                 </h2>
 
-                <p className=" p-3 text-center md:p-8 mt-2 font-semibold">
+                <p className=" text-center p-3 text-lg mt-2 font-semibold">
                   A responsive design makes your website accessible to all
                   users, regardless of their device.
                 </p>
               </div>
-              <div className="    bg-white  overflow-hidden">
+              <div className="    mx-auto px-5 w-[80%] bg-white overflow-hidden">
                 {/* <img src={#}/> */}
                 <img
                   className="w-[400px] p-4  duration-700 hover:scale-110    "
@@ -383,15 +384,15 @@ function Home() {
                   website-Rank
                 </h2>
 
-                <p className=" p-3 text-center md:p-8 mt-2 font-semibold">
+                <p className=" text-center p-3 text-lg mt-2 font-semibold">
                   Looking to improve your page performance, SEO, or user
                   experience? Request a free site audit.
                 </p>
               </div>
-              <div className="    bg-white  overflow-hidden">
+              <div className="    mx-auto px-5 w-[80%] bg-white overflow-hidden">
                 {/* <img src={#}/> */}
                 <img
-                  className="w-[210px] mx-6 md:mx-16 p-4  duration-700 hover:scale-110    "
+                  className="w-[50%] mx-auto  p-4  duration-700 hover:scale-110    "
                   src={Design6}
                   alt="services-img"
                 />
@@ -399,7 +400,7 @@ function Home() {
                   JAVA
                 </h2>
 
-                <p className=" p-3 text-center md:p-8 mt-2 font-semibold">
+                <p className="text-center p-3 text-lg mt-2 font-semibold">
                   commonly found in everything from desktop applications, web
                   servers and application servers, games, and database
                   connections.
@@ -426,8 +427,8 @@ function Home() {
               opportunities.
             </h3>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-16">
-            <div className="w-[250px] text-center h-[250px]">
+          <div className="grid grid-cols-1  md:grid-cols-4 gap-8 mt-16">
+            <div className="w-[250px]  mx-auto text-center h-[250px]">
               <img
                 className="w-[60px] ml-24  m-9 "
                 src={location}
@@ -436,7 +437,7 @@ function Home() {
               <h1 className="text-3xl font-bold m-4">Location</h1>
               <h3>Pune, Maharashtra, india</h3>
             </div>
-            <div className="w-[250px] text-center h-[250px]">
+            <div className="w-[250px] mx-auto text-center h-[250px]">
               <img
                 className="w-[60px] ml-24 m-9 "
                 src={email}
@@ -445,7 +446,7 @@ function Home() {
               <h1 className="text-3xl font-bold m-4">Email</h1>
               <h3>dhirajdagabaj0412@gmail.com</h3>
             </div>
-            <div className="w-[250px] text-center h-[250px]">
+            <div className="w-[250px] mx-auto text-center h-[250px]">
               <img
                 className="w-[60px] ml-24 m-9 "
                 src={phone}
@@ -454,7 +455,7 @@ function Home() {
               <h1 className="text-3xl font-bold m-4">Phone</h1>
               <h3>+91 9096940153</h3>
             </div>
-            <div className="w-[250px] text-center h-[250px]">
+            <div className="w-[250px] mx-auto text-center h-[250px]">
               <img
                 className="w-[60px] ml-24 m-9 "
                 src={portfolio}

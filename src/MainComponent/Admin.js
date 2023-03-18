@@ -43,16 +43,16 @@ const Admin = () => {
   };
 
   return (
-    <div className="adminpage   h-[570px] ">
+    <div className="bg-slate   h-[730px] ">
       <div className="flex justify-between list-none p-4">
         <li>
           <Avatar alt="Cindy Baker" src="src/Data/dhirajicon.jpg" />
         </li>
-      </div>
+      </div>  
 
       <Grid>
         <Paper
-          className=" md:px-10  px-4  py-5 h-[400px] w-[240px] md:w-[280px]  md:mx-72 mx-[10%] mt-8 "
+          className=" md:px-10  px-4 py-5 md:py-16 h-[400px] md:h-[500px] w-[240px] md:w-[340px]  m-auto mt-20 "
           elevation={10}
         >
           <Grid align="center">
@@ -95,12 +95,12 @@ const Admin = () => {
             fullWidth
             onClick={signin}
           >
-            Sign in
+            Log in
           </Button>
-          <Typography>
+          <Typography className=" md:py-5">
             <Link href="#">Forgot password ?</Link>
           </Typography>
-          <Typography>
+          <Typography >
             {" "}
             Already have an account ?<Link href="/signin">Sign in</Link>
           </Typography>
