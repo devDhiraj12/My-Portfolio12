@@ -123,7 +123,7 @@ function Header() {
 
         <div className="inline-block md:hidden   ">
           {["right"].map((anchor) => (
-            <React.Fragment>
+            <React.Fragment key={anchor}>
               <Button onClick={toggleDrawer(anchor, true)}>
                 <MenuIcon className="text-white" />
               </Button>

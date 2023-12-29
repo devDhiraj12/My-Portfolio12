@@ -1,10 +1,10 @@
 import React from "react";
 
 function Loading() {
-  return <div class="container">
-  <div class="loader"></div>
-  <div class="loader"></div>
-  <div class="loader"></div>
+  return <div className="container">
+  <div className="loader"></div>
+  <div className="loader"></div>
+  <div className="loader"></div>
 </div>
 }
 

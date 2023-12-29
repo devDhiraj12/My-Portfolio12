@@ -25,15 +25,22 @@ import portfolio from "../Data/portfolio.png";
 import { Divider } from "@mui/material";
 
 function Home() {
+  const downloadPdf = () => {
+    const link = document.createElement("a");
+    link.href = "http://localhost:3000/Resume.pdf";
+    link.download = "dhirajResume.pdf"; // Optional filename for download
+    link.click();
+  };
+
   return (
     <div className="main-page-content bg-slate dark:bg-slate-800 -z-10 overflow-hidden">
       {/* <!-- ================================ home =============================== --> */}
 
       <div
         id="home"
-        className=" flex flex-col bg-slate  h-[650px] md:h-[600px] "
+        className=" flex  flex-col bg-slate  h-[650px] md:h-[600px] "
       >
-        <div id="Homepage" className="block m-auto">
+        <div id="Homepage" className="block  m-auto">
           <h1 className=" text-[65px] md:text-[190px] font-bold mt-[10px]  md:pt-[110px]  mx-3   ">
             devDhiraj12
           </h1>
@@ -64,9 +71,11 @@ function Home() {
                 </a>
               </li>
               <li className=" w-[50px] md:w-[50px] p-2 md:p-3  bg-white border-2 shadow-inner hover:-translate-y-4 duration-700 hover:duration-300 rounded-[50%]">
-                <a href="http://localhost:3000/Resume.docx">
-                  <img src={resume} alt="under-heading" />
-                </a>
+                  <img
+                    src={resume}
+                    onClick={() => downloadPdf()}
+                    alt="under-heading"
+                  />
               </li>
             </ul>
           </div>
@@ -134,7 +143,7 @@ function Home() {
             </div>
           </div>
           <div className=" block md:flex w-full mt-24 m-10">
-            <ul className=" w-[250px] m-12 md:w-[300px]">
+            <ul className=" w-[250px] -ml-2  my-4 sm:m-12 md:w-[300px]">
               <img src={dhiraj} alt="about-img" />
             </ul>
             <div className=" w-[90%] md:w-[65%] mx-auto -ml-7 md:ml-0 md:p-5">
@@ -165,12 +174,12 @@ function Home() {
                 </p>
               </div>
               <div>
-                <a
+                <button
                   className="md:px-5 duration-700 p-2 rounded-lg mx-8 md:mx-12 bg-white hover:bg-metal shadow-lg"
-                  href="http://localhost:3000/Resume.docx"
+                  onClick={() => downloadPdf()}
                 >
                   See Resume
-                </a>
+                </button>
                 <a
                   className="md:px-5 duration-700 p-2 rounded-lg  md:mx-4 bg-white hover:bg-metal shadow-lg"
                   href="#contact"
@@ -281,7 +290,7 @@ function Home() {
               <h2 className="p-2 underline font-serif">Training & Skill</h2>
               <h2 className="p-2 ">2022-2023</h2>
               <p>
-                Currently learining Full-Stack Java Course From{" "}
+                Learining Full-Stack Java Course From{" "}
                 <a className="hover:underline" href="http://www.codekul.com/">
                   Codekul Classes,
                 </a>{" "}

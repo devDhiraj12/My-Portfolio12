@@ -3,6 +3,7 @@ import "./App.css";
 import { BrowserRouter, Switch, Route, Routes } from "react-router-dom";
 import Header from "./MainComponent/Header";
 import Home from "./MainComponent/Home";
+// import Carousol from "./Carousol";
 import Footer from "./MainComponent/Footer";
 import Admin from "./MainComponent/Admin";
 import AdminTable from "./MainComponent/AdminTable";
@@ -17,7 +18,7 @@ function App() {
     setloading(true);
     setTimeout(() => {
       setloading(false);
-    }, 4000);
+    }, 1000);
   }, []);
 
   return (
@@ -26,13 +27,13 @@ function App() {
         <Loading />
       ) : (
         <BrowserRouter>
-          <Header />
-
+<Header/>
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/signup" element={<Admin />} />
             <Route exact path="/users" element={<AdminTable />} />
             <Route exact path="/signin" element={<SignIn />} />
+            <Route exact path="/AdminTable" element={<AdminTable />} />
           </Routes>
           <Footer />
         </BrowserRouter>

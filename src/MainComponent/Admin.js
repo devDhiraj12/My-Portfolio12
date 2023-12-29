@@ -8,6 +8,7 @@ import {
   Typography,
   Link,
 } from "@mui/material";
+import axios from "axios";
 
 import LockPersonOutlinedIcon from "@mui/icons-material/LockPersonOutlined";
 
@@ -20,27 +21,19 @@ const Admin = () => {
   const avatarStyle = { backgroundColor: "#1bbd7e" };
   const btnstyle = { margin: "8px 0" };
   const textstyle = { margin: "10px 0" };
+
   const navigate = useNavigate();
-  const { register } = useForm();
+  const { register, handleSubmit } = useForm();
 
-  const pass = {
-    password: "",
-  };
-
-  const [password, setpassword] = React.useState(pass);
-
-  const varify = (event) => {
-    setpassword({ ...password, [event.target.name]: event.target.value });
-  };
-
-  const signin = () => {
-    console.log(password);
-    navigate(`/users`);
-    // if (password === "dhiraj") {
-    // } else {
-    //   console.log("please enter valid password");
-    // }
-  };
+  const onSubmit = (data) =>{
+     axios
+     .post("http://localhost:8899/api/createAdmin", data)
+     .then((response) => response.data)
+     .then((res) => {
+       console.log("Admin Created!!!");
+     });
+     navigate(`/SignIn`);
+    };
 
   return (
     <div className="bg-slate   h-[730px] ">
@@ -48,7 +41,7 @@ const Admin = () => {
         <li>
           <Avatar alt="Cindy Baker" src="src/Data/dhirajicon.jpg" />
         </li>
-      </div>  
+      </div>
 
       <Grid>
         <Paper
@@ -59,51 +52,55 @@ const Admin = () => {
             <Avatar style={avatarStyle}>
               <LockPersonOutlinedIcon />
             </Avatar>
-            <h2>Sign Up</h2>
+            <h2>Create account</h2>
           </Grid>
-          <TextField
-            label="Username"
-            style={textstyle}
-            placeholder="Enter username"
-            fullWidth
-            required
-            size="small"
-          />
-          <TextField
-            {...register("password", {
-              required: true,
-            })}
-            label="Password"
-            style={textstyle}
-            placeholder="Enter password"
-            type="password"
-            name="password"
-            fullWidth
-            required
-            size="small"
-            onChange={varify}
-          />
-          <FormControlLabel
-            control={<Checkbox name="checkedB" color="primary" />}
-            label="Remember me"
-          />
-          <Button
-            type="submit"
-            color="primary"
-            variant="contained"
-            style={btnstyle}
-            fullWidth
-            onClick={signin}
-          >
-            Log in
-          </Button>
-          <Typography className=" md:py-5">
-            <Link href="#">Forgot password ?</Link>
-          </Typography>
-          <Typography >
-            {" "}
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <TextField
+              {...register("username", {
+                required: true,
+              })}
+              label="username"
+              style={textstyle}
+              placeholder=" username"
+              type="username"
+              name="username"
+              fullWidth
+              required
+              size="small"
+            />
+            <TextField
+              {...register("password", {
+                required: true,
+              })}
+              label="Password"
+              style={textstyle}
+              placeholder=" password"
+              type="password"
+              name="password"
+              fullWidth
+              required
+              size="small"
+            />
+            <FormControlLabel
+              control={<Checkbox name="checkedB" color="primary" />}
+              label="Remember me"
+            />
+            <Button
+              type="submit"
+              color="primary"
+              variant="contained"
+              style={btnstyle}
+              fullWidth
+            >
+              Log in
+            </Button>
+          </form>
+        
+         <div className="mt-12">
+         <Typography>
             Already have an account ?<Link href="/signin">Sign in</Link>
           </Typography>
+         </div>
         </Paper>
       </Grid>
     </div>
